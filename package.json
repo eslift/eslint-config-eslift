@@ -1,0 +1,28 @@
+{
+  "name": "eslint-config-tsx",
+  "version": "0.1.0",
+  "repository": "github:eslint-tools/eslint-config-tsx",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "react.js",
+    "react-native.js"
+  ],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-eslint-comments": "^3.1.2",
+    "eslint-plugin-prettier": "^3.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "prettier": "^1.19.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always"
+  },
+  "license": "ISC"
+}
