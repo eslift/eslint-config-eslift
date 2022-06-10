@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tsx",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "repository": "github:eslint-tools/eslint-config-tsx",
   "main": "index.js",
   "files": [
