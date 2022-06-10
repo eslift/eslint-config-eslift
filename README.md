@@ -10,35 +10,26 @@ $ yarn add --dev eslint-config-tsx
 
 ## Usage
 
-Modify `eslintConfig` in `package.json` as follows.
+Modify your eslint config as follows.
 
-### TypeScript
+### TypeScript (with or without React)
+
+Add `"extends": "tsx"` to your eslint config. For example, if your eslint config is in package.json, it would look like this:
 
 ```json
 {
-  "name": "cool-node-server",
   "eslintConfig": {
     "extends": "tsx"
   }
 }
 ```
 
-### TypeScript + React
+### React Native
+
+Add `"extends": "tsx/react-native"` to your eslint config. For example, if your eslint config is in package.json, it would look like this:
 
 ```json
 {
-  "name": "awesome-react-website",
-  "eslintConfig": {
-    "extends": "tsx/react"
-  }
-}
-```
-
-### TypeScript + React Native
-
-```json
-{
-  "name": "amazing-native-app",
   "eslintConfig": {
     "extends": "tsx/react-native"
   }

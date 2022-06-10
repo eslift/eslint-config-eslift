@@ -6,14 +6,17 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
-  plugins: ['eslint-comments', 'import', 'prettier'],
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-  ],
+  plugins: ['eslint-comments', 'import', 'prettier', 'react', 'react-hooks'],
+  extends: ['plugin:@typescript-eslint/recommended', 'prettier'],
   settings: {
     'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+    react: {
+      version: 'detect',
+    },
   },
   rules: {
     // TypeScript (@typescript-eslint/eslint-plugin)
@@ -77,5 +80,23 @@ module.exports = {
     'prefer-const': 'off',
     radix: 'warn',
     yoda: 'warn',
+
+    // React (eslint-plugin-react)
+    'react/jsx-key': 'warn',
+    'react/jsx-no-comment-textnodes': 'warn',
+    'react/jsx-no-duplicate-props': 'warn',
+    'react/jsx-no-target-blank': 'warn',
+    'react/jsx-no-undef': 'warn',
+    'react/jsx-uses-react': 'warn',
+    'react/jsx-uses-vars': 'warn',
+    'react/no-unescaped-entities': 'warn',
+    'react/no-unknown-property': 'warn',
+    'react/react-in-jsx-scope': 'error',
+    'react/require-render-return': 'warn',
+    'react/self-closing-comp': 'warn',
+
+    // React (eslint-plugin-react-hooks)
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
   },
 };

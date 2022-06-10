@@ -1,5 +1,5 @@
 module.exports = {
-  extends: 'tsx/react',
+  extends: 'tsx',
   env: {
     'react-native/react-native': true,
   },
